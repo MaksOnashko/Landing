@@ -167,6 +167,49 @@ p{
 	width: 100%;
 	margin-top: 15%;
 }
+/* ================Стили на блока отзывы================ */
+
+.reviews_block{
+	margin-bottom: 50px;
+	position: relative;
+	height: 400px;
+}
+.review{
+	opacity: 0;
+	width: 800px;
+	margin: 50px auto;
+	position: absolute;
+	top:0;
+	left: 200px;
+	transition: 1s;
+	transform: translateX(-100px);
+}
+.review p{
+	font-size: 30px;
+}
+.review_item_wrapper{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.review_peoples{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 70%;
+	margin: 0 auto;
+	position: absolute;
+	top:300px;
+	left: 200px;
+}
+.review_peoples img{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	transition: 0.5s ;
+}
+/* ================================================= */
+
 .screen_5_title{
 	font-size: 32px;
 	color:#292929;

@@ -96,7 +96,44 @@
 </section>	  
 
 <section class="screen_4">
-
+	<div class="container">
+		<div class="reviews_block">
+               <div class="reviews">
+                    <div class="review review_item_1">
+                      <div class="review_item_wrapper">
+                         <p>Крутой пылесос, отвечаю!</p>
+                      </div>
+                    </div>
+                    <div class="review review_item_2">
+                      <div class="review_item_wrapper">
+                         <p>Подарили на свадьбу, очень рады.</p>
+                      </div>
+                    </div>
+                    <div class="review review_item_3">
+                      <div class="review_item_wrapper">
+                         <p>Очень хороший помощник в доме, убирает все начисто. Оставляю его на целый день, при этом заранее подготовив комнаты и ухожу. Возвращаясь домой - квартира вся чистая!</p>
+                      </div>
+                    </div>
+                    <div class="review review_item_4">
+                      <div class="review_item_wrapper">
+                         <p>Соседи довольны!</p>
+                      </div>
+                    </div>
+                    <div class="review review_item_5">
+                      <div class="review_item_wrapper">
+                         <p>Купил две штуки!</p>
+                      </div>
+                    </div>
+               </div>
+               <div class="review_peoples">
+                    <img class="people_1" src="img/photo1.jpg" alt="">
+                    <img class="people_2" src="img/photo2.jpg" alt="">
+                    <img class="people_3" src="img/photo3.jpg" alt="">
+                    <img class="people_4" src="img/photo4.jpg" alt="">
+                    <img class="people_5" src="img/photo5.jpg" alt="">
+               </div>
+          </div>
+	</div>
 </section>
 	  
 <section class="screen_5">
@@ -146,6 +183,136 @@
 			<p>&copy;karcher 2017</p>
 		</div>
 	</div>
-</section>	  
+</section>
+	  
+	  <script type="text/javascript">
+
+window.onload=function(){
+  var review_item_1 = document.querySelector('.review_item_1');
+  var review_item_2 = document.querySelector('.review_item_2');
+  var review_item_3 = document.querySelector('.review_item_3');
+  var review_item_4 = document.querySelector('.review_item_4');
+  var review_item_5 = document.querySelector('.review_item_5');
+
+  var people_1 = document.querySelector('.people_1');
+  var people_2 = document.querySelector('.people_2');
+  var people_3 = document.querySelector('.people_3');
+  var people_4 = document.querySelector('.people_4');
+  var people_5 = document.querySelector('.people_5');
+
+// Начальное значение свойств 3го отзыва после загрузке страници
+  review_item_3.style.opacity="1";
+  people_3.style.transform = "scale(1.2)";
+  review_item_3.style.transform="translateX(0px)";
+// ============================================
+
+  if(people_1){
+    people_1.addEventListener('mouseover',function(){
+      review_item_1.style.opacity="1";
+      review_item_2.style.opacity="0";
+      review_item_3.style.opacity="0";
+      review_item_4.style.opacity="0";
+      review_item_5.style.opacity="0";
+
+      review_item_1.style.transform="translateX(0px)";
+      review_item_2.style.transform="translateX(-100px)";
+      review_item_3.style.transform="translateX(-100px)";
+      review_item_4.style.transform="translateX(-100px)";
+      review_item_5.style.transform="translateX(-100px)";
+
+      people_1.style.transform = "scale(1.3)";
+      people_2.style.transform = "scale(1)";
+      people_3.style.transform = "scale(1)";
+      people_4.style.transform = "scale(1)";
+      people_5.style.transform = "scale(1)";
+    });
+  }
+  if(people_2){
+    people_2.addEventListener('mouseover',function(){
+      review_item_1.style.opacity="0";
+      review_item_2.style.opacity="1";
+      review_item_3.style.opacity="0";
+      review_item_4.style.opacity="0";
+      review_item_5.style.opacity="0";
+
+      review_item_1.style.transform="translateX(-100px)";
+      review_item_2.style.transform="translateX(0px)";
+      review_item_3.style.transform="translateX(-100px)";
+      review_item_4.style.transform="translateX(-100px)";
+      review_item_5.style.transform="translateX(-100px)";
+
+      people_1.style.transform = "scale(1)";
+      people_2.style.transform = "scale(1.3)";
+      people_3.style.transform = "scale(1)";
+      people_4.style.transform = "scale(1)";
+      people_5.style.transform = "scale(1)";
+    });
+  }
+  if(people_3){
+    people_3.addEventListener('mouseover',function(){
+      review_item_1.style.opacity="0";
+      review_item_2.style.opacity="0";
+      review_item_3.style.opacity="1";
+      review_item_4.style.opacity="0";
+      review_item_5.style.opacity="0";
+
+      review_item_1.style.transform="translateX(-100px)";
+      review_item_2.style.transform="translateX(-100px)";
+      review_item_3.style.transform="translateX(0px)";
+      review_item_4.style.transform="translateX(-100px)";
+      review_item_5.style.transform="translateX(-100px)";
+
+      people_1.style.transform = "scale(1)";
+      people_2.style.transform = "scale(1)";
+      people_3.style.transform = "scale(1.3)";
+      people_4.style.transform = "scale(1)";
+      people_5.style.transform = "scale(1)";
+    });
+  }
+  if(people_4){
+    people_4.addEventListener('mouseover',function(){
+      review_item_1.style.opacity="0";
+      review_item_2.style.opacity="0";
+      review_item_3.style.opacity="0";
+      review_item_4.style.opacity="1";
+      review_item_5.style.opacity="0";
+
+      review_item_1.style.transform="translateX(-100px)";
+      review_item_2.style.transform="translateX(-100px)";
+      review_item_3.style.transform="translateX(-100px)";
+      review_item_4.style.transform="translateX(0px)";
+      review_item_5.style.transform="translateX(-100px)";
+
+      people_1.style.transform = "scale(1)";
+      people_2.style.transform = "scale(1)";
+      people_3.style.transform = "scale(1)";
+      people_4.style.transform = "scale(1.3)";
+      people_5.style.transform = "scale(1)";
+    });
+  }
+  if(people_5){
+      people_5.addEventListener('mouseover',function(){
+        review_item_1.style.opacity="0";
+        review_item_2.style.opacity="0";
+        review_item_3.style.opacity="0";
+        review_item_4.style.opacity="0";
+        review_item_5.style.opacity="1";
+
+        review_item_1.style.transform="translateX(-100px)";
+        review_item_2.style.transform="translateX(-100px)";
+        review_item_3.style.transform="translateX(-100px)";
+        review_item_4.style.transform="translateX(-100px)";
+        review_item_5.style.transform="translateX(0px)";
+
+        people_1.style.transform = "scale(1)";
+        people_2.style.transform = "scale(1)";
+        people_3.style.transform = "scale(1)";
+        people_4.style.transform = "scale(1)";
+        people_5.style.transform = "scale(1.3)";
+      });
+  }
+}
+	  </script>
+	  
   </body>
 </html>
